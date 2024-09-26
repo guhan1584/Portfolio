@@ -1,11 +1,10 @@
-import React from "react";
-import "./Footer.css";
+import { Box, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <footer>
-      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
+    <Box as="footer" p={4} bg="gray.800" color="white" textAlign="center">
+      <Text>&copy; 2024 [Your Name]. All rights reserved.</Text>
+    </Box>
   );
 };
 

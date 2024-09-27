@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <Flex as="nav" p="4" alignItems="center">
       <Heading fontSize="xl" fontWeight="bold">
-        Guy Gochansky / Entrepreneur
+        Guy Gochansky / Software Engineer
       </Heading>
       <Spacer />
       <Box>

@@ -12,9 +12,11 @@ const IntroSection = () => {
       </Text>
       <Flex>
         <Button colorScheme="blue" mr="4">
-          <Link to="../pages/Resume">Resume</Link>
+          <Link to="/Resume">Resume</Link>
         </Button>
-        <Button variant="outline">Projects</Button>
+        <Button variant="outline">
+          <Link to="/projects">Projects</Link>
+        </Button>
       </Flex>
       <Text mt="6" fontSize="md" color="gray.600">
         I'm a paragraph. Click here to add your own text and edit me. It’s easy.

@@ -9,7 +9,7 @@ const NavBar = () => {
       </Heading>
       <Spacer />
       <Box marginRight={4}>
-        <Link to={"/HomePage"}>
+        <Link to={"/"}>
           <Button
             marginLeft={6}
             variant={"link"}
@@ -19,7 +19,7 @@ const NavBar = () => {
             About Me
           </Button>
         </Link>
-        <Link to={"/HomePage"}>
+        <Link to={"/resume"}>
           <Button
             marginLeft={6}
             variant={"link"}
@@ -29,7 +29,7 @@ const NavBar = () => {
             Resume
           </Button>
         </Link>
-        <Link to={"/HomePage"}>
+        <Link to={"/projects"}>
           <Button
             marginLeft={6}
             variant={"link"}
@@ -39,7 +39,7 @@ const NavBar = () => {
             Projects
           </Button>
         </Link>
-        <Link to={"/HomePage"}>
+        <Link to={"/contact"}>
           <Button
             marginLeft={6}
             variant={"link"}

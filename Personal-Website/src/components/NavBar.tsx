@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <Flex as="nav" p="4" alignItems="center">
-      <Heading fontSize="xl" fontWeight="bold">
+      <Heading marginLeft={2} fontSize="xl" fontWeight="bold">
         Guy Gochansky / Software Engineer
       </Heading>
       <Spacer />
-      <Box>
+      <Box marginRight={4}>
         <Link to={"/HomePage"}>
           <Button
             marginLeft={6}

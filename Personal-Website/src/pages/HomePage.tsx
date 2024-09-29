@@ -3,7 +3,7 @@ import ProfileSection from "../components/ProfileSection";
 
 const HomePage = () => {
   return (
-    <Grid templateRows="auto 1fr auto" h="100vh" p="20px" gap={4}>
+    <Grid templateRows="auto" h="100vh" p="20px" gap={4}>
       <GridItem
         display={"flex"}
         alignItems={"center"}

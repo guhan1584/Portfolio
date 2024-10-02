@@ -20,23 +20,14 @@ const Resume = () => {
             Guy Gochansky
           </Heading>
           <Text fontSize={"xl"} color={"gray.600"}>
-            Profuct Manager
+            Product Manager
           </Text>
         </Box>
-
         <Divider />
-
         <Education />
-
-        <Box padding={5}>
-          <Experience />
-        </Box>
-        <Box padding={5}>
-          <Skills />
-        </Box>
-        <Box padding={5}>
-          <MilitaryService />
-        </Box>
+        <Experience />
+        <Skills />
+        <MilitaryService />
       </VStack>
     </Container>
   );

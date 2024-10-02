@@ -1,64 +1,87 @@
-import { Card, Flex, Spacer } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Heading,
+  Progress,
+  SimpleGrid,
+  Tooltip,
+  VStack,
+} from "@chakra-ui/react";
+
+interface Skill {
+  name: string;
+  level: number; // 0 to 100
+  category: string;
+}
 
 const Skills = () => {
+  const mySkills: Skill[] = [
+    { name: "Python", level: 90, category: "Programming languages" },
+    { name: "Java", level: 80, category: "Programming languages" },
+    { name: "JavaScript", level: 80, category: "Programming languages" },
+    { name: "TypeScript", level: 80, category: "Programming languages" },
+    { name: "C#", level: 80, category: "Programming languages" },
+    { name: "React", level: 90, category: "Frameworks" },
+    { name: "Node.js", level: 90, category: "Frameworks" },
+    { name: "FastAPI", level: 80, category: "Frameworks" },
+    { name: "Flask", level: 80, category: "Frameworks" },
+    { name: "Docker", level: 80, category: "Tools" },
+    { name: "Virtual machines", level: 80, category: "Tools" },
+    { name: "Git", level: 80, category: "Tools" },
+    { name: "GitHub", level: 80, category: "Tools" },
+    { name: "OpenAI API", level: 80, category: "Tools" },
+    { name: "GPT4ALL", level: 80, category: "Tools" },
+    { name: "Vercel", level: 80, category: "Tools" },
+    { name: "Problem-solving", level: 90, category: "Personal Skills" },
+    { name: "Critical Thinking", level: 90, category: "Personal Skills" },
+    { name: "Communication", level: 90, category: "Personal Skills" },
+    { name: "Adaptability", level: 90, category: "Personal Skills" },
+    { name: "Time management", level: 90, category: "Personal Skills" },
+    { name: "Leadership", level: 90, category: "Personal Skills" },
+    { name: "Creativity", level: 90, category: "Personal Skills" },
+    { name: "Ambitious", level: 90, category: "Personal Skills" },
+  ];
+
+  const categories = Array.from(
+    new Set(mySkills.map((skill) => skill.category))
+  );
+
   return (
-    <Flex justifyContent={"center"}>
-      <Card>
-        <h1>
-          Programming languages
-          <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>C#</li>
-          </ul>
-        </h1>
-      </Card>
-      <Spacer padding={5} />
-      <Card>
-        <h1>
-          Frameworks
-          <ul>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>FastAPI</li>
-            <li>Flask</li>
-          </ul>
-        </h1>
-      </Card>
-      <Spacer padding={5} />
-      <Card>
-        <h1>
-          Tools
-          <ul>
-            <li>Docker</li>
-            <li>Virtual machines</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>OpenAI API</li>
-            <li>GPT4ALL</li>
-            <li>Vercel</li>
-          </ul>
-        </h1>
-      </Card>
-      <Spacer padding={5} />
-      <Card>
-        <h1>
-          Personal Skills
-          <ul>
-            <li>Problem-solving</li>
-            <li>Critical Thinking</li>
-            <li>Communication</li>
-            <li>Adaptability</li>
-            <li>Time management</li>
-            <li>Leadership</li>
-            <li>Creativity</li>
-            <li>Aambitious</li>
-          </ul>
-        </h1>
-      </Card>
-    </Flex>
+    <Box>
+      <Heading as="h2" size="xl" mb={6}>
+        Skills
+      </Heading>
+      <VStack spacing={8} align="stretch">
+        {categories.map((category) => (
+          <Box key={category}>
+            <Heading as="h3" size="lg" mb={4}>
+              {category}
+            </Heading>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+              {mySkills
+                .filter((skill) => skill.category === category)
+                .map((skill) => (
+                  <Tooltip
+                    key={skill.name}
+                    label={`${skill.level}%`}
+                    placement="top"
+                  >
+                    <Box>
+                      <Text mb={2}>{skill.name}</Text>
+                      <Progress
+                        value={skill.level}
+                        size="sm"
+                        colorScheme="blue"
+                        borderRadius="full"
+                      />
+                    </Box>
+                  </Tooltip>
+                ))}
+            </SimpleGrid>
+          </Box>
+        ))}
+      </VStack>
+    </Box>
   );
 };
 

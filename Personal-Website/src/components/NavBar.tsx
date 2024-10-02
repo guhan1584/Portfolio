@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Flex as="nav" p="4" alignItems="center">
+    <Flex bg={"#2C3E50"} as="nav" p="4" alignItems="center">
       <Heading marginLeft={2} fontSize="xl" fontWeight="bold">
         Guy Gochansky / Software Engineer
       </Heading>

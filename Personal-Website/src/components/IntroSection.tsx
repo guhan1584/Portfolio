@@ -11,10 +11,10 @@ const IntroSection = () => {
         Here's who I am & what I do
       </Text>
       <Flex>
-        <Button colorScheme="blue" mr="4">
+        <Button bg={"#2C3E50"} mr="4" variant="outline">
           <Link to="/Resume">Resume</Link>
         </Button>
-        <Button variant="outline">
+        <Button bg="#2C3E50" variant="outline">
           <Link to="/projects">Projects</Link>
         </Button>
       </Flex>

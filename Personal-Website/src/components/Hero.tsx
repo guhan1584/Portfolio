@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  IconButton,
-  Text,
-  Image,
-  Avatar,
-  Card,
-} from "@chakra-ui/react";
+import { Flex, IconButton, Text, Avatar, Card } from "@chakra-ui/react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import me from "../assets/MyPicture.jpeg";
 

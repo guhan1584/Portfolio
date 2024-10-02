@@ -1,17 +1,12 @@
 import {
   Box,
-  Card,
   Grid,
   GridItem,
   Heading,
   HStack,
-  ListItem,
   Spacer,
   Text,
-  UnorderedList,
-  VStack,
 } from "@chakra-ui/react";
-import React from "react";
 
 interface EducationProps {
   school: string;

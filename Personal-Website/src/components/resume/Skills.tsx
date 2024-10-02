@@ -1,5 +1,4 @@
 import { Card, Flex, Spacer } from "@chakra-ui/react";
-import React from "react";
 
 const Skills = () => {
   return (

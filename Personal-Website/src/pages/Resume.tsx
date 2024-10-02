@@ -2,7 +2,6 @@ import {
   Box,
   Container,
   Divider,
-  Flex,
   Heading,
   Text,
   VStack,
@@ -11,25 +10,6 @@ import Education from "../components/resume/Education";
 import Experience from "../components/resume/Experience";
 import Skills from "../components/resume/Skills";
 import MilitaryService from "../components/resume/MilitaryService";
-
-interface WorkExperience {
-  title: string;
-  company: string;
-  location: string;
-  startDate: string;
-  endDate: string;
-  description: string;
-}
-
-interface Skills {
-  name: string;
-}
-
-interface ResumeProps {
-  workExperience: WorkExperience[];
-  // education: Education[];
-  skills: Skills[];
-}
 
 const Resume = () => {
   return (

@@ -38,6 +38,7 @@ const Skills = () => {
             <li>GitHub</li>
             <li>OpenAI API</li>
             <li>GPT4ALL</li>
+            <li>Vercel</li>
           </ul>
         </h1>
       </Card>

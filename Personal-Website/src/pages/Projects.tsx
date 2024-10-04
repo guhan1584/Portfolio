@@ -23,29 +23,13 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description:
-      "A full-stack e-commerce solution with React frontend and Node.js backend.",
+    title: "Video Game Discovery Platform",
+    description: `Video Game Discovery App is a React-based application designed to help users explore a
+                  variety of video games by genre, platform, and search criteria. The app fetches data from
+                  the RAWG API and displays it in an easy-to-navigate format, providing game details and filtering options.`,
     imageUrl: "/placeholder.svg?height=200&width=300",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
+    technologies: ["React", "Chakra-UI", "Axios", "Express"],
     projectUrl: "https://github.com/yourusername/ecommerce-platform",
-  },
-  {
-    id: 2,
-    title: "Weather App",
-    description: "A responsive weather application using OpenWeatherMap API.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
-    technologies: ["React", "API Integration", "Styled Components"],
-    projectUrl: "https://github.com/yourusername/weather-app",
-  },
-  {
-    id: 3,
-    title: "Task Management System",
-    description:
-      "A Kanban-style task management app with drag-and-drop functionality.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
-    technologies: ["React", "TypeScript", "Redux", "Firebase"],
-    projectUrl: "https://github.com/yourusername/task-management",
   },
   // Add more projects as needed
 ];

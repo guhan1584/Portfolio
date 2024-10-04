@@ -10,6 +10,8 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
+import gamePlatform from "../assets/VideoGamePlatform screenshot.png";
+import portfolioPicture from "../assets/Portfolio Temp Picture.png";
 
 interface Project {
   id: number;
@@ -27,9 +29,27 @@ const projects: Project[] = [
     description: `Video Game Discovery App is a React-based application designed to help users explore a
                   variety of video games by genre, platform, and search criteria. The app fetches data from
                   the RAWG API and displays it in an easy-to-navigate format, providing game details and filtering options.`,
-    imageUrl: "/placeholder.svg?height=200&width=300",
-    technologies: ["React", "Chakra-UI", "Axios", "Express"],
-    projectUrl: "https://github.com/yourusername/ecommerce-platform",
+    imageUrl: gamePlatform,
+    technologies: [
+      "React",
+      "React Query",
+      "Chakra-UI",
+      "Axios",
+      "TypeScript",
+      "Zustand",
+      "React Router",
+    ],
+    projectUrl: "https://github.com/guhan1584/VideoGameDiscoveryApp",
+  },
+  {
+    id: 2,
+    title: "Personal Website (this website)",
+    description: `This website is a personal portfolio site built with React and Chakra UI. It showcases my
+                  projects, skills, and experience. The site is responsive and accessible, with a clean and
+                  modern design.`,
+    imageUrl: portfolioPicture,
+    technologies: ["React", "Chakra-UI", "TypeScript, React Router"],
+    projectUrl: "https://personal-website-lac-five.vercel.app/",
   },
   // Add more projects as needed
 ];
@@ -40,7 +60,7 @@ const Projects = () => {
       <Heading as="h1" size="2xl" mb={8} textAlign="center">
         My Projects
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         {projects.map((project) => (
           <LinkBox
             key={project.id}

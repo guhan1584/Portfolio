@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Layout from "./pages/Layout";
-import Contact from "./components/Contact";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {

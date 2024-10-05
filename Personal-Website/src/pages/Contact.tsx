@@ -17,7 +17,11 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = () => console.log("Submit");
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    console.log({ name, email, message });
+  };
 
   return (
     <Container maxW="container.md" py={10}>

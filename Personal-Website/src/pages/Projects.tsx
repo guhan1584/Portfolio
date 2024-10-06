@@ -26,9 +26,11 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Video Game Discovery Platform",
-    description: `Video Game Discovery App is a React-based application designed to help users explore a
-                  variety of video games by genre, platform, and search criteria. The app fetches data from
-                  the RAWG API and displays it in an easy-to-navigate format, providing game details and filtering options.`,
+    description: `The Video Game Discovery App fetches game data using the RAWG API, allowing users to explore different
+                  genres and platforms. The app uses React Query for efficient data fetching, caching, and background
+                  synchronization. It supports features such as infinite scrolling and filtering by genre, platform, and
+                  search terms. The app also utilizes Zustand for state management, React Router for navigation, and has
+                  been deployed on Vercel.`,
     imageUrl: gamePlatform,
     technologies: [
       "React",

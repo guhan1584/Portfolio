@@ -34,8 +34,8 @@ const Hero = () => {
         name="Guy Gochansky"
         src={me}
         bg="gray.200"
-        border="2px solid white" // Added border around image for contrast
-        rounded="full" // Ensures the image is circular
+        border="2px solid white"
+        rounded="full"
       />
       <VStack spacing={3} mt="4">
         <Text fontSize={textSize} fontWeight="bold" color="white">

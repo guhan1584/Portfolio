@@ -13,7 +13,7 @@ const ProfileSection = () => {
       width="100%"
       height="100%"
       p={6}
-      gap={5} // Increased gap for better spacing
+      gap={5}
     >
       <Box
         flex="1"
@@ -22,7 +22,7 @@ const ProfileSection = () => {
         height="auto"
         p={5}
         shadow="lg"
-        borderRadius="lg" // Softer border radius for modern look
+        borderRadius="lg"
         bgGradient="linear(to-r, teal.500, blue.600)"
       >
         <Hero />
@@ -37,7 +37,7 @@ const ProfileSection = () => {
         shadow="lg"
         borderRadius="lg"
         bgGradient="linear(to-r, teal.500, blue.600)"
-        ml={{ base: "0", md: "4" }} // Ensure margin on larger screens
+        ml={{ base: "0", md: "4" }}
       >
         <IntroSection />
       </Box>

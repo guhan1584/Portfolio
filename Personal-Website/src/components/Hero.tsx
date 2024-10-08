@@ -22,7 +22,7 @@ const Hero = () => {
       textAlign="center"
       p={{ base: "6", md: "10" }}
       bgGradient="linear(to-r, teal.500, blue.600)"
-      rounded="md"
+      rounded="lg" // Softer rounded edges for a modern look
       shadow="lg"
       maxW="container.md"
       mx="auto"
@@ -30,10 +30,12 @@ const Hero = () => {
     >
       <Avatar
         mx="auto"
-        size={avatarSize} // Dynamically adjusting avatar size
+        size={avatarSize}
         name="Guy Gochansky"
         src={me}
         bg="gray.200"
+        border="2px solid white" // Added border around image for contrast
+        rounded="full" // Ensures the image is circular
       />
       <VStack spacing={3} mt="4">
         <Text fontSize={textSize} fontWeight="bold" color="white">
@@ -48,12 +50,13 @@ const Hero = () => {
           as="a"
           href="#"
           icon={<FaFacebook />}
-          size={iconSize} // Responsive icon size
+          size={iconSize}
           mx={iconMargin}
           variant="outline"
           aria-label="Facebook"
           colorScheme="teal"
           isRound
+          _hover={{ transform: "scale(1.1)", transition: "0.2s ease-in-out" }} // Hover effect for icons
         />
         <IconButton
           as="a"
@@ -65,6 +68,7 @@ const Hero = () => {
           aria-label="Twitter"
           colorScheme="teal"
           isRound
+          _hover={{ transform: "scale(1.1)", transition: "0.2s ease-in-out" }}
         />
         <IconButton
           as="a"
@@ -76,6 +80,7 @@ const Hero = () => {
           aria-label="LinkedIn"
           colorScheme="teal"
           isRound
+          _hover={{ transform: "scale(1.1)", transition: "0.2s ease-in-out" }}
         />
         <IconButton
           as="a"
@@ -87,6 +92,7 @@ const Hero = () => {
           aria-label="Instagram"
           colorScheme="teal"
           isRound
+          _hover={{ transform: "scale(1.1)", transition: "0.2s ease-in-out" }}
         />
       </Flex>
     </Box>

@@ -15,12 +15,12 @@ const IntroSection = () => {
 
   return (
     <Box
-      p={{ base: "2", md: "2" }}
+      p={{ base: "4", md: "6" }}
       textAlign="center"
       bgGradient="linear(to-r, teal.500, blue.600)"
       color="white"
-      rounded="md"
-      shadow="md"
+      rounded="lg"
+      shadow="lg"
       maxW="container.lg"
       mx="auto"
       mt="8"
@@ -28,8 +28,8 @@ const IntroSection = () => {
       <Heading as="h1" size={headingSize} mb="4" fontWeight="bold">
         Hello There!
       </Heading>
-      <Text fontSize={textSize} mb="6">
-        This is who I am and what I do
+      <Text fontSize={textSize} mb="6" color="gray.100">
+        This is who I am and what I do.
       </Text>
 
       <Flex justifyContent="center" mb="8">
@@ -40,7 +40,7 @@ const IntroSection = () => {
           colorScheme="teal"
           variant="outline"
           mx={2}
-          _hover={{ bg: "white", color: "teal.500" }}
+          _hover={{ bg: "white", color: "teal.500", shadow: "md" }} // Hover effect on buttons
         >
           Resume
         </Button>
@@ -51,7 +51,7 @@ const IntroSection = () => {
           colorScheme="teal"
           variant="outline"
           mx={2}
-          _hover={{ bg: "white", color: "teal.500" }}
+          _hover={{ bg: "white", color: "teal.500", shadow: "md" }}
         >
           Projects
         </Button>

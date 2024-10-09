@@ -20,7 +20,7 @@ const Resume = () => {
             Guy Gochansky
           </Heading>
           <Text fontSize={"xl"} color={"gray.600"}>
-            Product Manager
+            Software Engineer
           </Text>
         </Box>
         <Divider />

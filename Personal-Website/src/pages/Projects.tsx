@@ -50,7 +50,7 @@ const projects: Project[] = [
                   projects, skills, and experience. The site is responsive and accessible, with a clean and
                   modern design.`,
     imageUrl: portfolioPicture,
-    technologies: ["React", "Chakra-UI", "TypeScript, React Router"],
+    technologies: ["React", "Chakra-UI", "TypeScript", "React Router"],
     projectUrl: "https://personal-website-lac-five.vercel.app/",
   },
   // Add more projects as needed

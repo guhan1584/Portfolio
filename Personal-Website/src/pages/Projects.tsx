@@ -11,7 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import gamePlatform from "../assets/VideoGamePlatform screenshot.png";
-import portfolioPicture from "../assets/Portfolio Temp Picture.png";
+import portfolioPicture from "../assets/PortfolioProjectPicture.png";
 
 interface Project {
   id: number;

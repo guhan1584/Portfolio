@@ -26,8 +26,8 @@ const Resume = () => {
         <Divider />
         <Education />
         <Experience />
-        <Skills />
         <MilitaryService />
+        <Skills />
       </VStack>
     </Container>
   );

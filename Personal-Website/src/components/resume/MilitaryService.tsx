@@ -7,6 +7,7 @@ import {
   ListItem,
   ListIcon,
   Divider,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { MdWork } from "react-icons/md";
 
@@ -19,7 +20,13 @@ interface ExperienceEntry {
 }
 
 const MilitaryService = () => {
-  const myMiltaryService: ExperienceEntry[] = [
+  // Light and dark mode handling
+  const cardBg = useColorModeValue("white", "gray.700");
+  const hoverBg = useColorModeValue("gray.100", "gray.600");
+  const textColor = useColorModeValue("gray.600", "gray.400");
+  const hoverTextColor = useColorModeValue("gray.800", "gray.300");
+
+  const myMilitaryService: ExperienceEntry[] = [
     {
       title: "Combat Intelligence Corps",
       rank: "Captain",
@@ -38,15 +45,33 @@ const MilitaryService = () => {
         Military Service
       </Heading>
       <VStack spacing={8} align="stretch">
-        {myMiltaryService.map((exp, index) => (
-          <Box key={index}>
+        {myMilitaryService.map((exp, index) => (
+          <Box
+            key={index}
+            p={5}
+            bg={cardBg}
+            shadow="md"
+            borderRadius="md"
+            transition="0.3s"
+            _hover={{
+              bg: hoverBg, // Change background color on hover
+              boxShadow: "lg", // Apply a shadow for depth on hover
+              transform: "scale(1.02)", // Slight zoom effect
+            }}
+          >
             <Heading as="h3" size="lg" mb={2}>
               {exp.title}
             </Heading>
             <Text fontSize="md" fontWeight="bold" mb={1}>
               {exp.rank}
             </Text>
-            <Text fontSize="sm" color="gray.600" mb={4}>
+            <Text
+              fontSize="sm"
+              color={textColor} // Text color based on theme
+              mb={4}
+              _hover={{ color: hoverTextColor }} // Hover color change
+              transition="0.2s" // Smooth color transition
+            >
               {exp.startDate} - {exp.endDate}
             </Text>
             <List spacing={2}>
@@ -57,7 +82,7 @@ const MilitaryService = () => {
                 </ListItem>
               ))}
             </List>
-            {index < myMiltaryService.length - 1 && <Divider mt={6} />}
+            {index < myMilitaryService.length - 1 && <Divider mt={6} />}
           </Box>
         ))}
       </VStack>

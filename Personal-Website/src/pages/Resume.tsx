@@ -22,8 +22,8 @@ const Resume = () => {
           <Text fontSize={"xl"} color={"gray.600"}>
             Software Engineer
           </Text>
+          <Divider marginTop={1} />
         </Box>
-        <Divider />
         <Education />
         <Experience />
         <MilitaryService />

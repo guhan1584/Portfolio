@@ -52,7 +52,7 @@ const Hero = () => {
         </Text>
       </VStack>
       <Flex justifyContent="center" mt="6">
-        <IconButton
+        {/* <IconButton
           as="a"
           href="#"
           icon={<FaFacebook />}
@@ -63,7 +63,7 @@ const Hero = () => {
           colorScheme="teal"
           isRound
           _hover={{ transform: "scale(1.1)", transition: "0.2s ease-in-out" }} // Hover effect for icons
-        />
+        /> */}
         <IconButton
           as="a"
           href="https://github.com/guhan1584"
@@ -88,7 +88,7 @@ const Hero = () => {
           isRound
           _hover={{ transform: "scale(1.1)", transition: "0.2s ease-in-out" }}
         />
-        <IconButton
+        {/* <IconButton
           as="a"
           href="#"
           icon={<FaInstagram />}
@@ -99,7 +99,7 @@ const Hero = () => {
           colorScheme="teal"
           isRound
           _hover={{ transform: "scale(1.1)", transition: "0.2s ease-in-out" }}
-        />
+        /> */}
       </Flex>
     </Box>
   );

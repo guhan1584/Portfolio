@@ -7,13 +7,7 @@ import {
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
-  FaGithub,
-} from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import me from "../assets/MyPicture.jpeg";
 
 const Hero = () => {

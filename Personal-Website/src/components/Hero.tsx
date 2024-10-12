@@ -7,7 +7,13 @@ import {
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaGithub,
+} from "react-icons/fa";
 import me from "../assets/MyPicture.jpeg";
 
 const Hero = () => {
@@ -60,19 +66,19 @@ const Hero = () => {
         />
         <IconButton
           as="a"
-          href="#"
-          icon={<FaTwitter />}
+          href="https://github.com/guhan1584"
+          icon={<FaGithub />}
           size={iconSize}
           mx={iconMargin}
           variant="outline"
-          aria-label="Twitter"
+          aria-label="GitHub"
           colorScheme="teal"
           isRound
           _hover={{ transform: "scale(1.1)", transition: "0.2s ease-in-out" }}
         />
         <IconButton
           as="a"
-          href="#"
+          href="https://www.linkedin.com/in/guy-gochansky-5aa426222/"
           icon={<FaLinkedin />}
           size={iconSize}
           mx={iconMargin}

@@ -14,7 +14,10 @@ const Footer = () => {
       <VStack spacing={4}>
         {/* Social Media Icons */}
         <Flex justify="center" gap={4}>
-          <Link href="https://linkedin.com" isExternal>
+          <Link
+            href="https://www.linkedin.com/in/guy-gochansky-5aa426222/"
+            isExternal
+          >
             <IconButton
               aria-label="LinkedIn"
               icon={<FaLinkedin />}
@@ -24,7 +27,7 @@ const Footer = () => {
               _hover={{ color: "teal.300" }}
             />
           </Link>
-          <Link href="https://github.com" isExternal>
+          <Link href="https://github.com/guhan1584" isExternal>
             <IconButton
               aria-label="GitHub"
               icon={<FaGithub />}

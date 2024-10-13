@@ -20,6 +20,7 @@ const ProfileSection = () => {
         textAlign="center"
         maxW="sm"
         height={{ base: "auto", md: "100%" }} // Ensure the height matches
+        width={{ base: "100%", md: "50%" }} // Ensure the width matches
         p={5}
         shadow="lg"
         borderRadius="lg"
@@ -33,6 +34,7 @@ const ProfileSection = () => {
         textAlign="center"
         maxW="xxl"
         height={{ base: "auto", md: "100%" }} // Ensure the height matches
+        width={{ base: "100%", md: "50%" }} // Ensure the width matches
         p={5}
         shadow="lg"
         borderRadius="lg"

@@ -71,6 +71,8 @@ const NavBar = () => {
       p="4"
       alignItems="center"
       justifyContent="space-between"
+      w={"100%"}
+      overflow={"hidden"}
     >
       <Box display="flex" alignItems="center">
         <Heading

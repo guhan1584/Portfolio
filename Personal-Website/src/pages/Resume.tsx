@@ -13,7 +13,7 @@ import MilitaryService from "../components/resume/MilitaryService";
 
 const Resume = () => {
   return (
-    <Container maxW={"container.lg"} py={10}>
+    <Container maxW={"container.lg"} py={2}>
       <VStack spacing={8} align={"stretch"}>
         <Box>
           <Heading as={"h1"} size={"2xl"} mb={2}>

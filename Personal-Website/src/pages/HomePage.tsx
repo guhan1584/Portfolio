@@ -3,7 +3,12 @@ import ProfileSection from "../components/ProfileSection";
 
 const HomePage = () => {
   return (
-    <Grid templateRows="auto" h="100vh" p="20px" gap={4}>
+    <Grid
+      templateRows="1fr" // Only one row here as the footer is already outside in Layout
+      h="100%" // Take up the available height in the middle section
+      p="20px"
+      gap={4}
+    >
       <GridItem
         display={"flex"}
         alignItems={"center"}

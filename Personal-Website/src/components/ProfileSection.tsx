@@ -11,7 +11,7 @@ const ProfileSection = () => {
       justifyContent="left"
       alignItems="center"
       width="100%"
-      height="100%"
+      height="100%" // Ensure the Flex container fills available height
       p={6}
       gap={5}
     >
@@ -19,7 +19,7 @@ const ProfileSection = () => {
         flex="1"
         textAlign="center"
         maxW="sm"
-        height="auto"
+        height={{ base: "auto", md: "100%" }} // Set height to 100% on larger screens
         p={5}
         shadow="lg"
         borderRadius="lg"
@@ -32,7 +32,7 @@ const ProfileSection = () => {
         flex="1"
         textAlign="center"
         maxW="xxl"
-        height="auto"
+        height={{ base: "auto", md: "100%" }} // Set height to 100% on larger screens
         p={5}
         shadow="lg"
         borderRadius="lg"

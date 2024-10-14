@@ -58,7 +58,7 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <Container maxW="container.xl" py={10}>
+    <Container maxW="container.xl" py={2}>
       <Heading as="h1" size="2xl" mb={8} textAlign="center">
         My Projects
       </Heading>

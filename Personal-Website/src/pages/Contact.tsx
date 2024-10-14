@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <Container maxW="container.md" py={10}>
+    <Container maxW="container.md" py={2}>
       <VStack spacing={8} align="stretch">
         <Heading as="h1" size="2xl" textAlign="center">
           Contact Me

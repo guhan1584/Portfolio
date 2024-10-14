@@ -26,10 +26,11 @@ const IntroSection = () => {
       mt="8"
     >
       <Heading as="h1" size={headingSize} mb="4" fontWeight="bold">
-        Hello There!
+        Welcome to my Journey!
       </Heading>
       <Text fontSize={textSize} mb="6" color="gray.100">
-        This is who I am and what I do.
+        Discover how I blend passion, creativity, and determination to craft
+        solutions and build the future. Let’s dive in!
       </Text>
 
       <Flex justifyContent="center" mb="8">
@@ -58,13 +59,13 @@ const IntroSection = () => {
       </Flex>
 
       <Text fontSize={{ base: "md", md: "lg" }} color="gray.200">
-        Passionate about software development and continuous learning, I thrive
-        on solving analytical problems with creative solutions. As an
-        out-of-the-box thinker and dedicated team player, I also have a strong
-        interest in innovation, constantly seeking new ideas to improve
-        processes and technology. I’m confident that my experience,
-        determination, and collaborative approach can bring valuable
-        contributions to any team.
+        I’m an ambitious junior software developer with a passion for solving
+        complex problems through innovative, out-of-the-box solutions. My
+        analytical thinking, paired with creativity, helps me tackle challenges
+        and drive continuous improvement. I thrive in collaborative environments
+        where leadership and communication are key, and I'm always seeking ways
+        to innovate and grow professionally. Ready to bring my skills and energy
+        to create impactful solutions, I’m eager to make a difference.
       </Text>
     </Box>
   );

@@ -41,7 +41,7 @@ const projects: Project[] = [
       "Zustand",
       "React Router",
     ],
-    projectUrl: "https://github.com/guhan1584/VideoGameDiscoveryApp",
+    projectUrl: "https://video-game-discovery-app-seven.vercel.app/",
   },
   {
     id: 2,
